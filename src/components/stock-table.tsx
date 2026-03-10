@@ -23,8 +23,6 @@ import { cn } from '@/lib/utils';
 import { useToast } from '@/hooks/use-toast';
 import { ReorderSuggestionDialog } from './reorder-suggestion-dialog';
 import { AssemblyDialog } from './assembly-dialog';
-import { suggestReorderQuantities } from '@/ai/flows/suggest-reorder-quantities';
-import type { SuggestReorderQuantitiesOutput } from '@/ai/flows/suggest-reorder-quantities';
 import { Checkbox } from '@/components/ui/checkbox';
 
 type ItemType = 'assembly' | 'spareParts' | 'tools';
