@@ -145,16 +145,12 @@ export function StockTable({ itemType }: StockTableProps) {
     }
   };
 
-  const handleGetSuggestions = async () => {
-    setIsLoadingSuggestions(true);
-    try {
-      const historicalDataForAI = assemblies.flatMap(assembly => 
-        assembly.items.map(item => ({
-          itemId: item.itemId,
-          quantitySold: item.quantityConsumed,
-          date: assembly.date,
-        }))
-      );
+      const handleGetSuggestions = async () => {
+        toast({
+          title: "Funktion deaktiviert",
+          description: "KI-Nachbestellvorschläge sind derzeit deaktiviert.",
+        });
+      };
       
       const currentStockLevels = items.map(item => ({
         itemId: item.id,
