@@ -54,7 +54,7 @@ export function StockTable({ itemType }: StockTableProps) {
   const [searchTerm, setSearchTerm] = useState('');
   const [isReorderDialogOpen, setReorderDialogOpen] = useState(false);
   const [isAssemblyDialogOpen, setAssemblyDialogOpen] = useState(false);
-  const [reorderSuggestions, setReorderSuggestions] = useState<SuggestReorderQuantitiesOutput>([]);
+  const [reorderSuggestions, setReorderSuggestions] = useState([]);
   const [isLoadingSuggestions, setIsLoadingSuggestions] = useState(false);
   const [isClient, setIsClient] = useState(false);
   const [selectedItems, setSelectedItems] = useState<Record<string, number>>({});
